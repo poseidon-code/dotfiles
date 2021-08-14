@@ -4,7 +4,7 @@
 # /\_\ \_____\      # Pritam Halder
 # \ \ \/ / / /      # a.k.a. POSEIDON
 #  \ \/ /\/ /       # https://github.com/poseidon-code
-#   \/_/\/_/        # www.pritamh.com
+#   \/_/\/_/        # www.pritamh.netlify.app
 #
 # Nothing much, just a standard .bashrc config for my bash setups.
 # This .bashrc is made in conjunction with my own ansible playbook, which sets up the system completly,
