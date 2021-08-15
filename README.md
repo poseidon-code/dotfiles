@@ -35,7 +35,8 @@ yay -S cava peaclock visual-studio-code-bin
 >
 > uncomment : `Color` \
 > uncomment : `ParallelDownloads = 6` \
-> Save <kbd>Ctrl</kbd> + <kbd>O</kdb> \
+> Save <kbd>Ctrl</kbd> + <kbd>O</kdb>
+>
 > Exit <kbd>Ctrl</kbd> + <kbd>X</kdb>
 
 > Setup Mirrors
