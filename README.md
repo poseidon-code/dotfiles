@@ -55,6 +55,8 @@ yay -S cava peaclock visual-studio-code-bin
 > makepkg -si
 > sudo pacman -Rs $(pacman -Qdtq)
 > sudo pacman -Scc
+> cd ..
+> sudo rm -rf yay-git
 > ```
 
 > For KDE Discover to work
