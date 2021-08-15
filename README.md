@@ -1,5 +1,9 @@
 # Current Rice : [KDE Plasma] - Dracula All In 🧛‍♂️
 
+![Rice](./assets/rice-sc1.png)
+
+<h3 align="center">&bull; &bull; &bull;</h3>
+
 ![Rice](./assets/rice.png)
 
 <h3 align="center">&bull; &bull; &bull;</h3>
