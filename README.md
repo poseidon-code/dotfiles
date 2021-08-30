@@ -31,7 +31,7 @@ yay -S cava peaclock visual-studio-code-bin
 
 ## Miscelenous Setup
 
-> Setup pacman
+> **Setup pacman**
 >
 > ```bash
 > sudo nano /etc/pacman.conf
@@ -43,7 +43,7 @@ yay -S cava peaclock visual-studio-code-bin
 >
 > Exit <kbd>Ctrl</kbd> + <kbd>X</kdb>
 
-> Setup Mirrors
+> **Setup Mirrors**
 >
 > ```bash
 > sudo pacman -S reflector
@@ -51,7 +51,7 @@ yay -S cava peaclock visual-studio-code-bin
 > sudo pacman -Syyuu
 > ```
 
-> Setup yay AUR Helper
+> **Setup yay AUR Helper**
 >
 > ```bash
 > git clone https://aur.archlinux.org/yay-git.git
@@ -63,17 +63,17 @@ yay -S cava peaclock visual-studio-code-bin
 > sudo rm -rf yay-git
 > ```
 
-> For KDE Discover to work
+> **For KDE Discover to work**
 >
 > ```bash
 > sudo pacman -S packagekit packagekit-qt5
 > ```
 
-> Panel Buttons \
+> **Panel Buttons** \
 > https://store.kde.org/p/1272871/
 
-> Setup dotfiles \
+> **Setup dotfiles** \
 > Copy all dot files from this repository to their respective directories.
 
-> Setup Konsole Color Scheme \
+> **Setup Konsole Color Scheme** \
 > https://draculatheme.com/konsole
