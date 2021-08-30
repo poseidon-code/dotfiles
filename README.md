@@ -25,7 +25,7 @@
 ## Packages
 
 ```bash
-sudo pacman -S neovim moc nano konsole kate dolphin firefox lsd bat pulseaudio-alsa ranger base base-devel htop git neofetch nodejs npm python libdbusmenu-glib gwenview elisa ark vlc
+sudo pacman -S neovim moc nano konsole kate dolphin firefox lsd bat pulseaudio-alsa ranger base base-devel htop git neofetch nodejs npm python libdbusmenu-glib gwenview elisa ark vlc noto-fonts-emoji
 yay -S cava peaclock visual-studio-code-bin
 ```
 
