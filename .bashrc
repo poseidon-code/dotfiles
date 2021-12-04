@@ -6,18 +6,18 @@
 #  \ \/ /\/ /       # https://github.com/poseidon-code
 #   \/_/\/_/        # www.pritamh.netlify.app
 #
-# Nothing much, just a standard .bashrc config for my bash setups.
-# This .bashrc is made in conjunction with my own ansible playbook, which sets up the system completly,
-# so that this .bashrc can work without any problems.
+# Nothing much, just a standard .bashrc config for my bash setups and linux rice.
 
 [[ $- != *i* ]] && return
 reset
 printf "\e[1;36m\
-_________                  ______________
-____  __ \____________________(_)_____  /____________
-___  /_/ /  __ \_  ___// _ \_  /_  __  /_  __ \_  __ \\
-__  ____// /_/ /(__  )/  __// / / /_/ / / /_/ // / / /
- /_/     \____//____/ \___//_/  \__,_/  \____//_/ /_/
+                            ██       ██
+                                     ██
+██████████████  ████   ████ ██ ████████████████████
+██    ██    ██  ██   ████   ██ ██    ██    ██    ██
+██████████████████     ████ ██ ██████████████    ██
+██
+██
 \e[0m\n"
 
 
