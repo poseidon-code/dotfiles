@@ -1,16 +1,14 @@
-# Current Rice : [KDE Plasma] - Dracula All In 🧛‍♂️
+<div align="center">
+
+![dotfiles](./dotfiles.jpg)
+
+# [KDE Plasma] - Dracula All In 🧛‍♂️
 
 ![Rice](./assets/rice-sc1.png)
-
-<h3 align="center">&bull; &bull; &bull;</h3>
-
+![Rice Video](./assets/rice.gif)
 ![Rice](./assets/rice.png)
 
-<h3 align="center">&bull; &bull; &bull;</h3>
-
-![Rice Video](./assets/rice.gif)
-
-<h3 align="center">&bull; &bull; &bull;</h3>
+</div>
 
 ## [KDE Plasma Setup](./assets/kde-setup)
 
@@ -37,11 +35,9 @@ yay -S cava peaclock visual-studio-code-bin
 > sudo nano /etc/pacman.conf
 > ```
 >
-> uncomment : `Color` \
-> uncomment : `ParallelDownloads = 6` \
-> Save <kbd>Ctrl</kbd> + <kbd>O</kdb>
->
-> Exit <kbd>Ctrl</kbd> + <kbd>X</kdb>
+> uncomment (then Save & Exit) : \
+> `Color` \
+> `ParallelDownloads = 6`
 
 > **Setup Mirrors**
 >
