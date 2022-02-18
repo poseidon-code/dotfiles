@@ -1,0 +1,4 @@
+#!/bin/sh
+weather=`curl -s wttr.in/Kolkata?format="%t\n"`
+echo $XDG_CONFIG_HOME/tint2/executors/weather.svg
+echo "$weather"
