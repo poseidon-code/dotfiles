@@ -2,6 +2,21 @@
 
 `tint2` config directory should be copied to `$XDG_CONFIG_HOME/tint2` _(provided that the `$XDG_CONFIG_HOME` environment variable is already set - generally, `$HOME/.config`; where `$HOME` is the user's home directory, generally `/home/username`)_
 
+## Autostart
+
+Make sure to add these commands to your WM's or DE's startup/autostart scripts.
+
+```sh
+# - example startup/autostart shell script
+# - if your WM/DE uses different form of startup script then follow those rules
+# - here, everything before '&' is the base command (you may only need the base commands if using some WM/DE which does not uses shell scripts as there startup scripts)
+tint2 -c $XDG_CONFIG_HOME/tint2/workspace.tint2rc &
+tint2 -c $XDG_CONFIG_HOME/tint2/date.tint2rc &
+tint2 -c $XDG_CONFIG_HOME/tint2/info.tint2rc &
+tint2 -c $XDG_CONFIG_HOME/tint2/dock.tint2rc &
+nm-applet &
+```
+
 ## Prerequisites
 
 `bc` - Basic Calculator\
