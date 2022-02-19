@@ -1,0 +1,24 @@
+#!/bin/sh
+muted=$(pacmd list-sinks | awk '/muted/ { print $2 }')
+vol=$(pactl list sinks | awk '/Volume:/ {printf "%s ",$5}' | cut -f1 -d ' ' | cut -f1 -d '%')
+
+if [[ $muted = "no" ]]; then
+	if [[ $vol -ge 100 ]]; then
+		vol=100
+		pactl set-sink-volume 0 100%
+		echo ~/Documents/tint2configs/executors/volume-high.svg
+		echo "$vol%"
+	elif [[ $vol -ge 65 ]]; then
+		echo ~/Documents/tint2configs/executors/volume-high.svg
+		echo "$vol%"
+	elif [[ $vol -ge 40 ]]; then
+		echo ~/Documents/tint2configs/executors/volume-medium.svg
+		echo "$vol%"
+	elif [[ $vol -ge 0 ]]; then
+		echo ~/Documents/tint2configs/executors/volume-low.svg
+		echo "$vol%"		
+	fi
+else
+	echo ~/Documents/tint2configs/executors/volume-mute.svg
+	echo "Muted"
+fi
