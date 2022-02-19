@@ -5,6 +5,6 @@ sleep 0.5
 read cpu a b c idle rest < /proc/stat
 total=$((a+b+c+idle))
 cpu=$((100*( (total-prevtotal) - (idle-previdle) ) / (total-prevtotal) ))
-echo ~/Documents/tint2configs/executors/cpu.svg
+echo $XDG_CONFIG_HOME/tint2/executors/cpu.svg
 echo "$cpu%"
  

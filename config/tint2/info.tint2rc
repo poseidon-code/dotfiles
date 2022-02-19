@@ -169,7 +169,7 @@ ac_disconnected_cmd =
 #-------------------------------------
 # Executor 1
 execp = new
-execp_command = . ~/Documents/tint2configs/executors/cpu
+execp_command = $XDG_CONFIG_HOME/tint2/executors/cpu
 execp_interval = 3
 execp_has_icon = 1
 execp_cache_icon = 1
@@ -193,7 +193,7 @@ execp_icon_h = 16
 #-------------------------------------
 # Executor 2
 execp = new
-execp_command = . ~/Documents/tint2configs/executors/mem
+execp_command = $XDG_CONFIG_HOME/tint2/executors/mem
 execp_interval = 3
 execp_has_icon = 1
 execp_cache_icon = 1
@@ -217,7 +217,7 @@ execp_icon_h = 16
 #-------------------------------------
 # Executor 3
 execp = new
-execp_command = . ~/Documents/tint2configs/executors/weather
+execp_command = $XDG_CONFIG_HOME/tint2/executors/weather
 execp_interval = 7200
 execp_has_icon = 1
 execp_cache_icon = 1

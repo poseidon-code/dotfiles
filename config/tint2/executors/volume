@@ -8,19 +8,19 @@ if [[ $muted = "no" ]]; then
 	if [[ $vol -ge 100 ]]; then
 		vol=100
 		pactl set-sink-volume $sink 100%
-		echo ~/Documents/tint2configs/executors/volume-high.svg
+		echo $XDG_CONFIG_HOME/tint2/executors/volume-high.svg
 		echo "$vol%"
 	elif [[ $vol -ge 65 ]]; then
-		echo ~/Documents/tint2configs/executors/volume-high.svg
+		echo $XDG_CONFIG_HOME/tint2/executors/volume-high.svg
 		echo "$vol%"
 	elif [[ $vol -ge 40 ]]; then
-		echo ~/Documents/tint2configs/executors/volume-medium.svg
+		echo $XDG_CONFIG_HOME/tint2/executors/volume-medium.svg
 		echo "$vol%"
 	elif [[ $vol -ge 0 ]]; then
-		echo ~/Documents/tint2configs/executors/volume-low.svg
+		echo $XDG_CONFIG_HOME/tint2/executors/volume-low.svg
 		echo "$vol%"		
 	fi
 else
-	echo ~/Documents/tint2configs/executors/volume-mute.svg
+	echo $XDG_CONFIG_HOME/tint2/executors/volume-mute.svg
 	echo "Muted"
 fi
