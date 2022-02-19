@@ -30,7 +30,11 @@ nm-applet &
 
 > _Make sure all executor scripts are **executable**_
 
-## CPU Usage Stats
+---
+
+## Executors
+
+### CPU Usage Stats
 
 Executor Script : [cpu](./executors/cpu)\
 Executor Config : [info.tint2rc](./info.tint2rc)
@@ -61,7 +65,7 @@ execp_icon_w = 16
 execp_icon_h = 16
 ```
 
-## Memory Usage Stats
+### Memory Usage Stats
 
 Executor Script : [mem](./executors/mem)\
 Executor Config : [info.tint2rc](./info.tint2rc)
@@ -92,7 +96,7 @@ execp_icon_w = 16
 execp_icon_h = 16
 ```
 
-## Local Weather Stats
+### Local Weather Stats
 
 > _Change the `region` variable to your specific local region (use `curl wttr.in?format=3` to get your region name - may vary on network IP location)_
 
@@ -125,7 +129,7 @@ execp_icon_w = 14
 execp_icon_h = 14
 ```
 
-## Network Stats
+### Network Stats
 
 > _Change the `n` variable to your network name (generally, one which is connected to the Internet) (you can list your network cards using the `cat /proc/net/dev` and use any **name** from the **Interface** column except `lo` - here, `ens33` is used)_
 
@@ -158,7 +162,7 @@ execp_icon_w = 14
 execp_icon_h = 14
 ```
 
-## Volume Controller
+### Volume Controller
 
 > _Change the `sink` variable to your default audio device. The sink index number can be found using `pacmd list-sinks` command and choose the **index number** of your sound device as the `sink` value. Use the same value for the tint2 config, eg. `execp_lclick_command = pactl set-sink-mute <sink index number> toggle`_
 
