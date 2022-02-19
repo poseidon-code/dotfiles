@@ -1,5 +1,5 @@
 #!/bin/sh
 region=Kolkata
 weather=`curl -s wttr.in/$region?format="%t\n"`
-echo ~/Documents/tint2configs/executors/weather.svg
+echo $XDG_CONFIG_HOME/tint2/executors/weather.svg
 echo "$weather"

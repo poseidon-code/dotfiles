@@ -1,4 +1,4 @@
 #!/bin/sh
 mem=`free | awk '/Mem/ {printf "%.2fG\n", $3 / 1024.0 / 1024.0 }'`
-echo ~/Documents/tint2configs/executors/mem.svg
+echo $XDG_CONFIG_HOME/tint2/executors/mem.svg
 echo "$mem"
