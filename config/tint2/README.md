@@ -1,15 +1,17 @@
-`tint2` config directory should be copied to `$XDG_CONFIG_HOME/tint2` _(provided that the `$XDG_CONFIG_HOME` environment variable is already set - generally, `$HOME/.config`)_
+# tint2 Configs
+
+`tint2` config directory should be copied to `$XDG_CONFIG_HOME/tint2` _(provided that the `$XDG_CONFIG_HOME` environment variable is already set - generally, `$HOME/.config`; where `$HOME` is the user's home directory, generally `/home/username`)_
 
 ## Prerequisites
 
-`bc` - Basic Calculator
-`nm-applet` - Network Manager Applet _(network-manager-applet)_
-`pactl` - Pulseaudio Controller
-`pacmd` - Pulseaudio Command
-`pavucontrol` - Pulseaudio Controller GUI
+`bc` - Basic Calculator\
+`nm-applet` - Network Manager Applet _(network-manager-applet)_\
+`pactl` - Pulseaudio Controller\
+`pacmd` - Pulseaudio Command\
+`pavucontrol` - Pulseaudio Controller GUI\
 `ttf-jetbrains-mono` - Jet Brains Mono font
 
-> _Basic `free`, `awk`, `expr`, `read`, `curl`, `cat`, `printf`, `echo` is already present with generally all linux installations. If not then do install them or their alternatives (if using any alternatives, then check executor scripts and its corresponding executor configs to swap those commands out)_
+> _Basic `free`, `awk`, `expr`, `read`, `curl`, `cat`, `printf`, `echo` is already present with generally all linux installations. If NOT, then do install them or their alternatives (if using any alternatives, then check executor scripts and its corresponding executor configs to swap those commands out)_
 
 > _Make sure all executor scripts are **executable**_
 
