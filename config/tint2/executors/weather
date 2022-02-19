@@ -1,4 +1,5 @@
 #!/bin/sh
-weather=`curl -s wttr.in/Kolkata?format="%t\n"`
+region=Kolkata
+weather=`curl -s wttr.in/$region?format="%t\n"`
 echo ~/Documents/tint2configs/executors/weather.svg
 echo "$weather"
