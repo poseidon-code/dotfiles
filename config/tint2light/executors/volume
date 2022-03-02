@@ -1,0 +1,26 @@
+#!/bin/sh
+muted=$(pacmd list-sinks | awk '/muted/ { print $2 }')
+vol=$(pactl list sinks | awk '/Volume:/ {printf "%s ",$5}' | cut -f1 -d ' ' | cut -f1 -d '%')
+
+sink=0
+
+if [[ $muted = "no" ]]; then
+	if [[ $vol -ge 100 ]]; then
+		vol=100
+		pactl set-sink-volume $sink 100%
+		echo $XDG_CONFIG_HOME/tint2/executors/volume-high.svg
+		echo "$vol%"
+	elif [[ $vol -ge 65 ]]; then
+		echo $XDG_CONFIG_HOME/tint2/executors/volume-high.svg
+		echo "$vol%"
+	elif [[ $vol -ge 40 ]]; then
+		echo $XDG_CONFIG_HOME/tint2/executors/volume-medium.svg
+		echo "$vol%"
+	elif [[ $vol -ge 0 ]]; then
+		echo $XDG_CONFIG_HOME/tint2/executors/volume-low.svg
+		echo "$vol%"		
+	fi
+else
+	echo $XDG_CONFIG_HOME/tint2/executors/volume-mute.svg
+	echo "Muted"
+fi
