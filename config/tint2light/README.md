@@ -219,6 +219,8 @@ Audio : pulseaudio, pavucontrol, pacmd, pactl
 3. Add desktop margins in XFCE.\
    _(`xfce4-settings-manager` &rarr; Workspaces. &rarr; Margins\
     Top-Rght-Bottom-Left : 28-8-28-8)_
+4. Disable `xfce4-panel`.\
+   _(`xfce4-settings-manager` &rarr; Session and Startup &rarr; Currtent Session &rarr; select `xfce4-panel` &rarr; click 'Quit Program' &rarr; click 'Save Session')_
 
 ### **1. Tint2 Dock** _([dock.tint2rc](./dock.tint2rc))_
 
