@@ -1,1 +1,1 @@
-../tint2light/README.md
+../../config/tint2light/README.md
