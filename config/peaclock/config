@@ -50,14 +50,14 @@ fill ''
 # fill-colon ''
 
 # set the locale, for example 'en_CA.utf8', an empty string clears the value
-locale ''
+locale 'en_US.utf8'
 
 # set the timezone, for example 'America/Vancouver', an empty string clears the
 # value
-timezone ''
+timezone 'Asia/Kolkata'
 
 # set the date format string, an empty string clears the value
-date '%a %b %d'
+date '%A, %d %B %Y'
 
 # set the mode type
 # select one of:
@@ -142,7 +142,7 @@ set auto-ratio on
 
 # set the style of the text set by the command 'fill' used to draw active
 # blocks in the clock
-style active-fg blue
+style active-fg cyan bright
 
 # set the style of the text set by the command 'fill' used to draw inactive
 # blocks in the clock
@@ -150,7 +150,7 @@ style inactive-fg clear
 
 # set the style of the text set by the command 'fill-colon' used to draw colon
 # blocks in the clock
-style colon-fg yellow
+style colon-fg black bright
 
 # set the style of the background used to draw active blocks in the clock
 style active-bg reverse
@@ -162,7 +162,7 @@ style inactive-bg clear
 style colon-bg clear
 
 # set the style of the date
-style date green
+style date white bright
 
 # set the style of the background
 style background clear
