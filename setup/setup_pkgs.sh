@@ -2,7 +2,7 @@
 
 printf "(poseidon-code) Installing Required Packages"
 
-doas pacman -Syu --noconfirm unzip tar p7zip unrar wget go npm nodejs jdk-openjdk jre-openjdk python python-pip neovim bat lsd ranger neofetch lsd
+doas pacman -Syu --noconfirm unzip tar p7zip unrar wget go npm nodejs jdk-openjdk jre-openjdk python python-pip neovim bat lsd ranger neofetch
 doas pacman -Scc
 doas pacman -Rs $(pacman -Qdtq)
 
