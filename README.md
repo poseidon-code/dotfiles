@@ -27,6 +27,12 @@ sudo pacman -S neovim moc nano konsole kate dolphin firefox lsd bat pulseaudio-a
 yay -S cava peaclock visual-studio-code-bin
 ```
 
+## KDE Suite Packages
+
+```bash
+sudo pacman -S kde-network-meta kde-system-meta kde-utilities-meta kde-accessibility-meta dolphin-plugins gwenview okular spectacle
+```
+
 ## Miscelenous Setup
 
 > **Setup pacman**
