@@ -23,14 +23,21 @@
 ## Packages
 
 ```bash
-sudo pacman -S neovim moc nano konsole kate dolphin firefox lsd bat pulseaudio-alsa ranger base base-devel htop git neofetch nodejs npm python libdbusmenu-glib gwenview elisa ark vlc noto-fonts-emoji
+sudo pacman -S neovim moc nano firefox lsd bat ranger base base-devel btop git neofetch nodejs go jdk-openjdk jre-openjdk npm python libdbusmenu-glib vlc telegram-desktop discord libreoffice-fresh latte
 yay -S cava peaclock visual-studio-code-bin
+```
+
+## Setup Pipewire
+
+```bash
+sudo pacman -S pipewire pipewire-alsa pipewire-pulse pipewire-jack xdg-desktop-portal xdg-desktop-portal-kde
+sudo systemctl enable --now pipewire-pulse.service
 ```
 
 ## KDE Suite Packages
 
 ```bash
-sudo pacman -S kde-network-meta kde-system-meta kde-utilities-meta kde-accessibility-meta dolphin-plugins gwenview okular spectacle
+sudo pacman -S kde-network-meta kde-system-meta kde-utilities-meta kde-accessibility-meta dolphin-plugins gwenview elisa ark okular spectacle konsole kate dolphin kmail
 ```
 
 ## Miscelenous Setup
@@ -56,13 +63,13 @@ sudo pacman -S kde-network-meta kde-system-meta kde-utilities-meta kde-accessibi
 > **Setup yay AUR Helper**
 >
 > ```bash
-> git clone https://aur.archlinux.org/yay-git.git
-> cd yay-git/
+> git clone https://aur.archlinux.org/yay.git
+> cd yay/
 > makepkg -si
 > sudo pacman -Rs $(pacman -Qdtq)
 > sudo pacman -Scc
 > cd ..
-> sudo rm -rf yay-git
+> sudo rm -rf yay
 > ```
 
 > **For KDE Discover to work**
@@ -70,9 +77,6 @@ sudo pacman -S kde-network-meta kde-system-meta kde-utilities-meta kde-accessibi
 > ```bash
 > sudo pacman -S packagekit packagekit-qt5
 > ```
-
-> **Panel Buttons** \
-> https://store.kde.org/p/1272871/
 
 > **Setup dotfiles** \
 > Copy all dot files from this repository to their respective directories.

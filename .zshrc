@@ -6,7 +6,7 @@
 #  \ \/ /\/ /       # https://github.com/poseidon-code
 #   \/_/\/_/        # www.pritamh.netlify.app
 #
-# Nothing much, just a standard .bashrc config for my bash setups and linux rice.
+# Nothing much, just a standard .zshrc config for my zsh setups and linux rice.
 
 [[ $- != *i* ]] && return
 reset
@@ -21,6 +21,7 @@ printf "\e[1;36m\
 \e[0m\n"
 
 
+# SHELL OPTIONS
 setopt AUTO_CD                      # Go to folder path without using cd.
 setopt AUTO_PUSHD                   # Push the old directory onto the stack on cd.
 setopt PUSHD_IGNORE_DUPS            # Do not store duplicates in the stack.
@@ -39,7 +40,7 @@ setopt HIST_SAVE_NO_DUPS            # Do not write a duplicate event to the hist
 setopt HIST_VERIFY                  # Do not execute immediately upon history expansion.
 
 
-
+# ALIASES
 alias sudo="doas --"
 alias doas="doas --"
 alias vim="nvim"
@@ -55,7 +56,7 @@ alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias ip='ip -color=auto'
 alias diff='diff --color=auto'
-alias src='. $HOME/.zshrc'
+alias src='source $HOME/.zshrc'
 alias mocp='mocp -M $XDG_CONFIG_HOME/moc'
 alias peaclock='peaclock --config-dir $XDG_CONFIG_HOME/peaclock'
 
@@ -95,7 +96,15 @@ function extract {
     fi
 }
 
-
+# Auto Completion
 autoload -Uz compinit && compinit
+_comp_options+=(globdots)
+zstyle ':completion:*' menu select
+zstyle ':completion::complete:*' gain-privileges 1
+zstyle ':completion:*' rehash true
 
 zstyle :compinstall filename "$HOME/.zshrc"
+
+
+# Propmt
+eval "$(starship init zsh)"
