@@ -2,7 +2,7 @@
 
 printf "(poseidon-code) Installing zsh"
 
-cp ../.zshrc ../.zshenv ../.zprofile /home/$(whoami)/.zsh/
+cp ../.zshrc ../.zshenv ../.zprofile /home/$(whoami)/
 cp ../.zshrc /root/
 
 pacman -Syu zsh zsh-completion zsh-autosuggestions zsh-syntax-highlighting zsh-history-substring-match
@@ -10,4 +10,4 @@ pacman -Syu zsh zsh-completion zsh-autosuggestions zsh-syntax-highlighting zsh-h
 chsh $(which zsh)
 chsh -s $(which zsh) $(whoami)
 
-source /home/$(whoami)/.zsh/.zshrc
+source /home/$(whoami)/.zshrc
