@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/sh
 
 printf "(poseidon-code) Installing yay"
 
