@@ -39,4 +39,3 @@ export VIDEO="vlc"
 export IMAGE="gwenview"
 export COLORTERM="truecolor"
 export PAGER="less"
-
