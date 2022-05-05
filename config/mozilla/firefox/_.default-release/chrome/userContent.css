@@ -1,0 +1,18 @@
+@-moz-document url-prefix(about:newtab), url-prefix(about:home) {
+    body,
+    html,
+    #newtab-customize-overlay {
+        background-image: url('background.jpg') !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+    }
+}
+
+@-moz-document url-prefix(about:blank) {
+    body,
+    html,
+    #newtab-customize-overlay {
+        background-color: #1e1e1e !important;
+    }
+}
