@@ -108,6 +108,7 @@ _comp_options+=(globdots)
 zstyle ':completion:*' menu select
 zstyle ':completion::complete:*' gain-privileges 1
 zstyle ':completion:*' rehash true
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 zstyle :compinstall filename "$HOME/.zshrc"
 
 
