@@ -3,6 +3,9 @@ typeset -U path PATH
 path=($HOME/.local/bin $path)
 export PATH
 
+# Option
+export GTK_USE_PORTAL=1
+
 # Paths
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_DATA_HOME="$HOME/.local/share"
