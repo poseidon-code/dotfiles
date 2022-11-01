@@ -10,15 +10,7 @@
 
 </div>
 
-## [KDE Plasma Setup](./assets/kde-setup)
-
-## [Wallpaper](https://github.com/poseidon-code/wallpapers)
-
-## [Panel](./assets/panel)
-
-## [Dolphin](./assets/dolphin)
-
-## [Konsole](./assets/konsole)
+## [Wallpapers](https://github.com/poseidon-code/wallpapers)
 
 ## Packages
 
