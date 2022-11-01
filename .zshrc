@@ -97,9 +97,26 @@ function extract {
 
 
 # zsh Pugins
-source "/usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh"
-source "/usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh"
-source "/usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+#source "/usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh"
+#source "/usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh"
+#source "/usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+
+source /usr/share/zplug/init.zsh
+zplug "plugins/git", from:oh-my-zsh
+zplug "plugins/sudo", from:oh-my-zsh
+zplug "plugins/command-not-found", from:oh-my-zsh
+zplug "zsh-users/zsh-syntax-highlighting"
+zplug "zsh-users/zsh-autosuggestions"
+zplug "zsh-users/zsh-history-substring-search"
+zplug "zsh-users/zsh-completions"
+
+if ! zplug check --verbose; then
+	printf "Install? [y/N]: "
+	if read -q; then
+		echo; zplug install
+	fi
+fi
+zplug load
 
 
 # Auto Completion
